@@ -1,0 +1,121 @@
+<ion-header >
+  <ion-toolbar class="header">
+
+    <img src="assets/NerdSphera.svg" id="logo" alt="NerdSphera Logo" />
+
+    <ion-buttons slot="end">
+      <ion-button>
+        <ion-icon slot="icon-only" name="search-outline" color="light"></ion-icon>
+      </ion-button>
+      <ion-button>
+        <ion-icon slot="icon-only" name="menu-outline" color="light"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="profile-container">
+
+    <ion-avatar class="profile-avatar">
+      <img src="assets/icon/icone_perfil.jpg" alt="icone_perfil">
+    </ion-avatar>
+
+    <ion-buttons class="change-icon">
+      <ion-header>
+        <ion-title>Trocar ícone</ion-title>
+      </ion-header>
+      <!--acessar arquivos-->
+      <ion-button id="hover-trigger">
+        <ion-icon slot="icon-only" name="camera-outline"></ion-icon>
+        <ion-popover trigger="hover-trigger" triggerAction="hover">
+          <ng-template>
+            <ion-content class="ion-padding">Buscar arquivo</ion-content>
+          </ng-template>
+        </ion-popover>
+      </ion-button>
+      <!--acessar camera-->
+      <ion-button id="hover-trigger">
+        <ion-icon slot="icon-only" name="images-outline"></ion-icon>
+        <ion-popover trigger="hover-trigger" triggerAction="hover" >
+          <ng-template>
+            <ion-content class="ion-padding">Abrir câmera</ion-content>
+          </ng-template>
+        </ion-popover>
+      </ion-button>
+    </ion-buttons>
+
+    <!--funções de acesso a camera (consertar)
+
+    <div class="profile-container">
+      <ion-avatar class="profile-avatar" *ngIf="photo; else defaultAvatar"> 
+        <img [src]="photo" alt="Profile Photo"> 
+      </ion-avatar>
+
+      <ng-template #defaultAvatar> 
+        <ion-avatar class="profile-avatar"> 
+          <img src="assets/img/default-avatar.png" alt="Profile Photo"> 
+        </ion-avatar> 
+      </ng-template> 
+
+      <ion-button (click)="takePicture()"> 
+        <ion-icon slot="icon-only" name="camera-outline">
+        </ion-icon> 
+      </ion-button>
+    </div>
+    fim da div do icone-->
+
+    <!--acesso ao armazanamento do dispositivo (consertar)
+
+    <div class="profile-container"> 
+      <ion-button (click)="writeFile()"> 
+        <ion-icon slot="icon-only" name="document-outline">
+        </ion-icon> Write File 
+      </ion-button> 
+      <ion-button (click)="readFile()"> 
+        <ion-icon slot="icon-only" name="folder-outline">
+        </ion-icon> Read File 
+      </ion-button>
+  -->
+
+  <!--consertar o card (expandir para a direita)-->
+  <ion-card>
+    <ion-card-header>
+      <ion-title>Alterar perfil</ion-title>
+    </ion-card-header>
+
+      <ion-list>
+
+        <ion-item>
+          <ion-label position="floating">Nome de Usuário</ion-label>
+          <ion-input></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">E-mail</ion-label>
+          <ion-input type="email"></ion-input>
+        </ion-item>
+
+        <ion-item>
+          <ion-label position="floating">Senha</ion-label>
+          <ion-input type="password"></ion-input>
+        </ion-item>
+      </ion-list>
+
+    <!--colocar função de enviar os dados-->
+    <ion-button class="button" (click)="enviarDados()">
+      Concluído
+    </ion-button>
+  </ion-card>
+
+    <ion-button expand="full" class="transparent-button" routerLink="/home">
+      <ion-icon name="arrow-back-outline" slot="start"></ion-icon>
+      Voltar
+    </ion-button>
+  </div>
+</ion-content>
+
+
+
+

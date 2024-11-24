@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Sair</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding" style="display: flex; justify-content: center; align-items: center; height: 100vh; background-color: #d3d3d3;">
+  <ion-card style="padding: 20px; text-align: center;">
+    <ion-card-content>
+      <h2>Sair?</h2>
+      <p>Tem certeza que deseja se desconectar?</p>
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-button expand="block" color="primary" (click)="goToInicio()">
+              SIM</ion-button>
+          </ion-col>
+          <ion-col>
+            <ion-button expand="block" color="secondary" (click)="goToHome()">
+              NÃO</ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+</ion-content>

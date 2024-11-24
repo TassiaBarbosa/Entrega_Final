@@ -1,0 +1,83 @@
+
+/*css do icone de acesso a camera(colocar depois)*/
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-avatar {
+  margin-top: 20px;
+  width: 100px;
+  height: 100px;
+}
+
+ion-button {
+  margin-top: 10px;
+}
+
+/*css da página de perfil */
+.header {
+  --background: linear-gradient(to bottom, #190055, #6a0dad);
+  text-align: center;
+  color: white;
+  }
+ion-content {
+  --background: linear-gradient(to bottom, #190055, #6a0dad);
+  }
+/*
+ion-card {
+  border-radius: 14 px; 
+  min-height: 80px;
+  max-width: 700 px;
+}
+ion-list {
+  width: 100%;
+  max-width: 700px;
+  margin-top: 20px;
+}
+ion-label {
+  font-family:'Exo 2', sans-serif ;
+}
+*/
+
+#logo {
+  height: 50px; 
+  margin: auto; 
+  margin-top: 10px;
+  display: block;
+}
+ion-button {
+  margin-top: 10px;
+}
+
+.transparent-button {
+  --background: transparent;  
+  --border-radius: 10px;      
+  --color: white;             
+  --box-shadow: none;         
+}
+
+.transparent-button:hover {
+  --background: rgba(255, 255, 255, 0.1);  
+}
+
+.button { 
+  font-family:'Exo 2', sans-serif;
+  color: white;
+  font-weight: bolder;
+  border: none;
+  border-radius: 16px;
+
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  height: 100%; 
+  }
+
+  ion-popover { //ajustar tamanho do popover
+    --color: white;
+    --width: 40px;
+    font-size: small;
+    
+  }

@@ -1,0 +1,40 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Cadastro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <!--Colocar imagens de fundo-->
+    <div id="cadastro" class="col-10 col-sm-8 col-md-6 mx-auto">
+        <form action="#" method="get">
+            <h1 class="centro">Cadastro</h1>
+            <div class="mb-3">
+              <img src="" alt=""><!--colocar icone-->
+              <p class="center">Escolher imagem</p>
+            </div>
+            <div class="mb-3">
+                <label for="nome" class="form-label">Nome de usuário</label>
+                <input type="text" id="nome" name="nome" class="form-control" minlength="3" maxlength="12" placeholder="mín. 3 e máx. 12 caracteres" required>
+            </div>
+            <div class="mb-3">
+              <label for="nome" class="form-label">E-mail</label>
+              <input type="email" id="email" name="email" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="senha" class= "form-label">Senha:</label >
+                <input type="password" id="senha" name="senha" class="form-control" minlength="8" maxlength="8" placeholder="Deve possuir 8 caracteres" required>
+            </div>
+            <!--colocar função de validação-->
+            <div class="d-grid gap-2">
+                <input type="submit" value="Pronto !" class="btn btn-primary mt-4">
+            </div>
+            <div class="mt-3">
+              <input type="checkbox">Receber notificações
+          </div>
+        </form>
+      </div>
+      <ion-button fill="clear" routerLink="#" routerDirection="root">
+        Voltar</ion-button>
+</ion-content>
+    

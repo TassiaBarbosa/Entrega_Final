@@ -1,0 +1,79 @@
+#container {
+  text-align: center;
+
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #8c8c8c;
+
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+}
+//css do menu
+ion-menu::part(backdrop) {
+  background-color: rgba(255, 0, 255, 0.5);
+}
+
+ion-menu::part(container) {
+  border-radius: 0 20px 20px 0;
+
+  box-shadow: 4px 0px 16px rgba(255, 0, 255, 0.18);
+}
+
+
+
+
+
+.header {
+  --background: linear-gradient(to bottom, #190055, #6a0dad);
+  text-align: center;
+  color: white;
+  }
+ion-content {
+  --background: white;
+ // --background: linear-gradient(to bottom, #190055, #6a0dad);
+
+  }
+.config-container {
+  background: white;
+}
+
+//css da imagem nerdsphera
+#logo {
+  height: 50px; 
+  margin: auto; 
+  margin-top: 10px;
+  display: block;
+}
+
+ion-button {
+  margin-top: 10px;
+}
+
+//botão de voltar
+.transparent-button {
+  --background: transparent;  
+  --border-radius: 10px;      
+  --color: black;             
+  --box-shadow: none;         
+}
+.transparent-button:hover {
+  --background: rgba(255, 255, 255, 0.1);  
+}
+

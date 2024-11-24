@@ -1,0 +1,37 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+      <!--Colocar imagens de fundo-->
+  <div id="login" class="col-8 col-sm-6 col-md-4 mx-auto">
+    <form class="form-control" action="#" method="post">
+        <h1 class="centro">Login</h1>
+        <div class="mb-3">
+            <label for="login" class="form-label">E-mail ou nome de usuário</label>
+            <input type="text" id="login" name="login" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <label for="senha" class="form-label">Senha</label>
+            <input type="password" id="senha" name="senha" class="form-control" required>
+        </div>
+        <div class="mt-3">
+            <input type="checkbox"> Mantenha-me logado
+        </div>
+        <div class="d-grid gap-2">
+            <input type="submit" value="Login" class="btn btn-primary mt-4"
+            (click)="irParaHome()">
+        </div>
+        <div class="text-center mt-3">
+            Esqueceu a senha? <a href="#">Clique aqui</a>
+        </div>
+        <div class="text-center mt-3">
+          Não possui login? <a href="#">Cadastre-se aqui</a>
+        </div>
+      </form>
+    </div>
+    <ion-button fill="clear" (click)="irParaInicio()">
+      Voltar</ion-button>
+</ion-content>
