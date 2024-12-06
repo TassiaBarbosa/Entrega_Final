@@ -1,89 +1,51 @@
-
-.header {
+//header
+ion-toolbar {
     --background: linear-gradient(to bottom, #190055, #6a0dad);
+    --color: white;
+    --min-height: 30px;
+    --padding-top: 5px;
+    --padding-bottom: 5px;
     text-align: center;
-    color: white;
-    }
-ion-content {
-    --background: white;
-   // --background: linear-gradient(to bottom, #190055, #6a0dad);
-
-    }
-.config-container {
-    background: white;
   }
-
-  // imagem nerdsphera
+  // imagem nerdsphera do header
   #logo {
     height: 50px; 
     margin: auto; 
     margin-top: 10px;
     display: block;
   }
-  //
   
-
-  //botão de voltar
-  ion-button {
-    margin-top: 10px;
+  //corpo
+  ion-content {
+    --background: white;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
   }
+  .header-content {
+    text-align: center;
+    padding: 20px;
+    color: white;
+  }
+  .title{
+    color:#000000;
+  }
+  ion-item {
+    color: rgb(0, 0, 0);
+    --ion-item-background: #f3f4f6;
+    border-radius: 10px;
+  }
+  
+  //botão
+  ion-button {
+    margin-top: 20px;
+  }
+  //botão transparente
   .transparent-button {
     --background: transparent;  
     --border-radius: 10px;      
-    --color: black;             
+    --color: white;             
     --box-shadow: none;         
   }
   .transparent-button:hover {
     --background: rgba(255, 255, 255, 0.1);  
   }
-
-  //alteração de tipo de fonte
-  
-  .font-default {
-    font-family: 'Arial', sans-serif;
-  }
-  
-  .font-alternativa {
-    font-family: 'Courier New', Courier, monospace;
-  }
-  
-  .font-customizada {
-    font-family: 'Comic Sans MS', cursive, sans-serif;
-  }
-
-  //alteração de tamanho da fonte
-  .size-small {
-    font-size: 12px;
-  }
-  .size-default {
-    font-size: 16px;
-  }
-  .size-large {
-    font-size: 20px;
-  }
-  .size-xlarge {
-    font-size: 24px;
-  }
-  
-  //alterar contraste da fonte
-  .contrast-high {
-    color: #FFFFFF; /* Cor da fonte branca */
-    background-color: #000000; /* Fundo preto */
-  }
-  
-  .contrast-medium {
-    color: #000000; /* Cor da fonte preta */
-    background-color: #FFD700; /* Fundo amarelo */
-  }
-  
-  .contrast-low {
-    color: #808080; /* Cor da fonte cinza */
-    background-color: #F0F0F0; /* Fundo cinza claro */
-  }
-  .contrast-default {
-    color: #000000; /* Cor da fonte preto */
-    background-color: #FFFFFF; /* Fundo branco */
-  }
-
-
-  
